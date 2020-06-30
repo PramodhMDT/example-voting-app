@@ -5,10 +5,10 @@ on: [push]
 jobs:
   deploy:
   
-  runs-on: self-hosted
+    runs-on: self-hosted
   
-  steps:
-    - uses: actions/checkout@v1
+    steps:
+      - uses: actions/checkout@v1
     
-    - name: Depoly App
-      run: docker-compose up -d
+      - name: Depoly App
+        run: docker-compose up -d
