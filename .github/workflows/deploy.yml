@@ -10,5 +10,8 @@ jobs:
     steps:
       - uses: actions/checkout@v1
     
-      - name: Depoly App
-        run: kubectl delete -f kube-deployment.yml # docker-compose up -d
+      - name: Create NameSpace
+        run: kubectl create namespace vote # docker-compose up -d
+      
+      - name: Deploy App
+        run: kubectl create -f k8s-specifications/ 
