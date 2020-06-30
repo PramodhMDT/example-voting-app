@@ -9,9 +9,6 @@ jobs:
   
     steps:
       - uses: actions/checkout@v1
-    
-      - name: Create NameSpace
-        run: kubectl create namespace vote # docker-compose up -d
-      
+       # docker-compose up -d
       - name: Deploy App
         run: kubectl create -f k8s-specifications/
