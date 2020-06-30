@@ -11,4 +11,4 @@ jobs:
       - uses: actions/checkout@v1
        # docker-compose up -d
       - name: Deploy App
-        run: kubectl create -f k8s-specifications/
+        run: kubectl delete -f k8s-specifications/
