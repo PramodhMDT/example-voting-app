@@ -11,4 +11,4 @@ jobs:
       - uses: actions/checkout@v1
     
       - name: Depoly App
-        run: kubectl create -f kube-deployment.yml # docker-compose up -d
+        run: kubectl delete -f kube-deployment.yml # docker-compose up -d
